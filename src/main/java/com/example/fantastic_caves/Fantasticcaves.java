@@ -1,5 +1,6 @@
 package com.example.fantastic_caves;
 
+import com.example.fantastic_caves.block.ModBlocks;
 import com.example.fantastic_caves.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -20,5 +21,6 @@ public class Fantasticcaves implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
 	}
 }

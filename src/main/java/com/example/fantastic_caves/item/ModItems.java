@@ -15,11 +15,11 @@ public class ModItems {
     // Items
     // =========================
 
-    // Declaration of the SUSPICIOUS_POWDER item.
     // It is a static final constant, meaning only one instance exists, and it cannot be reassigned.
     // It is automatically registered when the class is initialized.
-    public static final Item SUSPICIOUS_POWDER = registerItem("suspicious_powder", new Item(new Item.Settings()));
 
+    public static final Item SUSPICIOUS_POWDER = registerItem("suspicious_powder", new Item(new Item.Settings()));
+    public static final Item GRAPPLING_HOOK = registerItem("grappling_hook", new Item(new Item.Settings()));
 
 
 
@@ -54,6 +54,10 @@ public class ModItems {
         // to the "INGREDIENTS" item group in the creative inventory.
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(SUSPICIOUS_POWDER);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(GRAPPLING_HOOK);
         });
     }
 
