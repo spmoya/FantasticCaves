@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "fantastic-caves:ninium_ore"
+          "name": "fantastic-caves:raw_ninium"
         }
       ],
       "conditions": [
