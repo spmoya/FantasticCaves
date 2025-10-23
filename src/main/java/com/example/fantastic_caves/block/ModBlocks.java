@@ -1,16 +1,30 @@
 package com.example.fantastic_caves.block;
 
 import com.example.fantastic_caves.Fantasticcaves;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
+    // =========================
+    // Mod Blocks
+    // =========================
 
+    public static final Block CONDENSED_DIRT = registerBlock(
+            "condensed_dirt",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.GRASS))
+    );
 
     // =========================
     // Helper Methods
@@ -50,5 +64,9 @@ public class ModBlocks {
 
         // NOTE: All static block declarations (e.g., public static final Block CUSTOM_BLOCK)
         // would implicitly call 'registerBlock()' from here or elsewhere in the class.
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+            entries.add(ModBlocks.CONDENSED_DIRT);
+        });
     }
 }
