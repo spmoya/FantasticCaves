@@ -16,7 +16,7 @@ public class ModItemGroups {
             Identifier.of(Fantasticcaves.MOD_ID, "fantastic_caves_items"),
             FabricItemGroup.builder()
                     .icon(() -> new ItemStack(ModItems.GRAPPLING_HOOK))
-                    .displayName(Text.translatable("itemgroup.fantasticcaves.fantastic_caves_items"))
+                    .displayName(Text.translatable("itemGroup.fantastic-caves.fantastic_caves_items"))
                     .entries((displayContext, entries) -> {
 
                        entries.add(ModItems.GRAPPLING_HOOK);
@@ -28,7 +28,7 @@ public class ModItemGroups {
             Identifier.of(Fantasticcaves.MOD_ID, "fantastic_caves_blocks"),
             FabricItemGroup.builder()
                     .icon(() -> new ItemStack(ModBlocks.CONDENSED_DIRT))
-                    .displayName(Text.translatable("itemgroup.fantasticcaves.fantastic_caves_blocks"))
+                    .displayName(Text.translatable("itemGroup.fantastic-caves.fantastic_caves_blocks"))
                     .entries((displayContext, entries) -> {
 
                        entries.add(ModBlocks.CONDENSED_DIRT);
