@@ -1,6 +1,7 @@
 package com.example.fantastic_caves;
 
 import com.example.fantastic_caves.block.ModBlocks;
+import com.example.fantastic_caves.item.ModItemGroups;
 import com.example.fantastic_caves.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -20,6 +21,8 @@ public class Fantasticcaves implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+
+        ModItemGroups.registerItemGroup();
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
 	}

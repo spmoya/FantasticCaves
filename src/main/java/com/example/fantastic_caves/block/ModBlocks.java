@@ -22,7 +22,7 @@ public class ModBlocks {
             "condensed_dirt",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(2f)
+                    .strength(1f)
                     .sounds(BlockSoundGroup.GRASS))
     );
 

@@ -2,5 +2,8 @@
   "item.fantastic-caves.suspicious_powder": "Suspicious Powder",
   "item.fantastic-caves.grappling_hook": "Grappling Hook",
 
-  "block.fantastic-caves.condensed_dirt": "Condensed Dirt"
+  "block.fantastic-caves.condensed_dirt": "Condensed Dirt",
+
+  "itemgroup.fantastic-caves.fantastic-caves-items": "Fantastic Caves Items",
+  "itemgroup.fantastic-caves.fantastic-caves-blocks": "Fantastic Caves Blocks"
 }
