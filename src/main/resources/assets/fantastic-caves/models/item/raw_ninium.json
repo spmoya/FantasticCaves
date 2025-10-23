@@ -1,3 +1,6 @@
 {
-  "parent":"fantastic-caves:block/raw_ninium"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "fantastic-caves:item/raw_ninium"
+  }
 }

@@ -1,3 +1,6 @@
 {
-  "parent":"fantastic-caves:block/ninium_ingot"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "fantastic-caves:item/ninium_ingot"
+  }
 }
