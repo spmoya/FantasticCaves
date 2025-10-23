@@ -32,6 +32,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
 
                        entries.add(ModBlocks.CONDENSED_DIRT);
+                       entries.add(ModBlocks.NINIUM_ORE);
 
                     }).build());
 

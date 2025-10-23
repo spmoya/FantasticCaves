@@ -26,6 +26,14 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.GRASS))
     );
 
+    public static final Block NINIUM_ORE = registerBlock(
+            "ninium_ore",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(3f)
+                    .sounds((BlockSoundGroup.DEEPSLATE)))
+    );
+
     // =========================
     // Helper Methods
     // =========================
@@ -67,6 +75,9 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.CONDENSED_DIRT);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+            entries.add(ModBlocks.NINIUM_ORE);
         });
     }
 }
