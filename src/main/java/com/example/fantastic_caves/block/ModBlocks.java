@@ -21,8 +21,8 @@ public class ModBlocks {
     public static final Block CONDENSED_DIRT = registerBlock(
             "condensed_dirt",
             new Block(AbstractBlock.Settings.create()
-                    .strength(4f)
                     .requiresTool()
+                    .strength(2f)
                     .sounds(BlockSoundGroup.GRASS))
     );
 
