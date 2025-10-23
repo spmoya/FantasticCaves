@@ -18,10 +18,15 @@ public class ModItems {
     // It is a static final constant, meaning only one instance exists, and it cannot be reassigned.
     // It is automatically registered when the class is initialized.
 
-    public static final Item SUSPICIOUS_POWDER = registerItem("suspicious_powder", new Item(new Item.Settings()));
-    public static final Item GRAPPLING_HOOK = registerItem("grappling_hook", new Item(new Item.Settings()));
+    public static final Item SUSPICIOUS_POWDER = registerItem("suspicious_powder",
+            new Item(new Item.Settings()));
+    public static final Item GRAPPLING_HOOK = registerItem("grappling_hook",
+            new Item(new Item.Settings()));
 
-
+    public static final Item RAW_NINIUM = registerItem("raw_ninium",
+            new Item(new Item.Settings()));
+    public static final Item NINIUM_INGOT = registerItem("ninium_ingot",
+            new Item(new Item.Settings()));
 
     // =========================
     // Helper Methods
@@ -54,6 +59,8 @@ public class ModItems {
         // to the "INGREDIENTS" item group in the creative inventory.
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(SUSPICIOUS_POWDER);
+            fabricItemGroupEntries.add(RAW_NINIUM);
+            fabricItemGroupEntries.add(NINIUM_INGOT);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(fabricItemGroupEntries -> {

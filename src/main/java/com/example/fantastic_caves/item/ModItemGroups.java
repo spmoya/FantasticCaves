@@ -21,6 +21,8 @@ public class ModItemGroups {
 
                        entries.add(ModItems.GRAPPLING_HOOK);
                        entries.add(ModItems.SUSPICIOUS_POWDER);
+                       entries.add(ModItems.RAW_NINIUM);
+                       entries.add(ModItems.NINIUM_INGOT);
 
                     }).build());
 
