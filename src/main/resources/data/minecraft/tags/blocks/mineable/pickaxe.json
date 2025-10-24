@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "fantastic-caves:ninium_ore"
+    "fantastic-caves:ninium_ore",
+    "fantastic-caves:ninium_block"
   ]
 }

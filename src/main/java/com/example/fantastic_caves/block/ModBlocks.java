@@ -34,6 +34,14 @@ public class ModBlocks {
                     .sounds((BlockSoundGroup.DEEPSLATE)))
     );
 
+    public static final Block NINIUM_BLOCK = registerBlock(
+            "ninium_block",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(3f)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK))
+    );
+
     // =========================
     // Helper Methods
     // =========================
@@ -78,6 +86,7 @@ public class ModBlocks {
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(ModBlocks.NINIUM_ORE);
+            entries.add(ModBlocks.NINIUM_BLOCK);
         });
     }
 }
